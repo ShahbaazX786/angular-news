@@ -1,3 +1,4 @@
+import { NewsApiService } from './../../../services/news-api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:NewsApiService) { }
+
+
+  HeadLinesArray = [];
 
   ngOnInit(): void {
+    this.api.getTopHeadLines().subscribe((res)=>{
+      // console.log(res);
+      this.HeadLinesArray = res;
+
+    })
   }
 
 }

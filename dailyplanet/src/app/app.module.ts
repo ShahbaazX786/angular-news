@@ -15,6 +15,10 @@ import { ReportComponent } from './components/public/report/report.component';
 import { DocumentationComponent } from './components/public/documentation/documentation.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [NewsApiService],
   bootstrap: [AppComponent]
