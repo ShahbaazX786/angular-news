@@ -1,3 +1,4 @@
+import { NewsApiService } from './services/news-api.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +13,7 @@ import { ContactComponent } from './components/public/contact/contact.component'
 import { PnfComponent } from './components/public/pnf/pnf.component';
 import { ReportComponent } from './components/public/report/report.component';
 import { DocumentationComponent } from './components/public/documentation/documentation.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import { DocumentationComponent } from './components/public/documentation/docume
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [NewsApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
