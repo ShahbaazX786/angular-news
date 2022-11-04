@@ -14,6 +14,7 @@ const routes: Routes = [
   {path:'contact', component:ContactComponent },
   {path:'report', component:ReportComponent },
   {path:'docs', component:DocumentationComponent },
+  {path:'pnff', component:PnfComponent },
   {path:'**', component:PnfComponent },
 ];
 
