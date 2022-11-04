@@ -36,16 +36,32 @@
 }
 
 .example-card {
-  max-width: 250px;
+  max-width: 400px;
   max-height: auto;
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size:cover;
+mat-card-header{
+  padding: 0;
+  margin: 0;
+}
+
+.title{
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  justify-content: center;
 }
 
 .thumb{
-  background-size: cover;
+  width: 200px;
+}
+
+.cardd{
+  transition: all 0.3s ease-in-out;
+}
+
+.cardd:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 
 }

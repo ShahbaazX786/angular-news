@@ -1,5 +1,5 @@
-import { NewsApiService } from './../../../services/news-api.service';
 import { Component, OnInit } from '@angular/core';
+import { NewsApiService } from './../../../services/news-api.service';
 
 @Component({
   selector: 'app-hero',
@@ -11,12 +11,12 @@ export class HeroComponent implements OnInit {
   constructor(private api:NewsApiService) { }
 
 
-  HeadLinesArray = [];
+  HeadLinesArray:any= [];
 
   ngOnInit(): void {
     this.api.getTopHeadLines().subscribe((res)=>{
-      // console.log(res);
-      this.HeadLinesArray = res;
+      console.log(res.articles);
+      this.HeadLinesArray = res.articles;
 
     })
   }
