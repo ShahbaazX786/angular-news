@@ -1,67 +1,75 @@
-.container {
+.title{
+  margin: 3% 0;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container{
   margin: 0;
   padding: 0;
 }
 
-.bgimg{
-  position: absolute;
-  /* top: 0;
-  left: 0; */
-  width: 100%;
-  height: 100vh;
-  z-index: -2;
-  /* object-fit: cover; */
-  opacity: 0.2;
-  background-size: cover;
-
-}
-
-
-.title{
-  justify-content: center;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 2%;
-  font-family: 'Montserrat';
-  font-weight: bold;
-}
-
-.container2{
-  margin: 3% 3%;
+.row{
   display: flex;
   flex-direction: row;
-  gap: 1;
-  justify-content: flex-start;
   align-items: center;
-}
-
-.example-card {
-  max-width: 400px;
-  max-height: auto;
-}
-
-mat-card-header{
-  padding: 0;
-  margin: 0;
-}
-
-.title{
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: left;
   justify-content: center;
+  align-self: center;
+  gap: 1rem;
 }
+
+.card-links{
+  text-decoration: none;
+}
+
+.cardd, .example-card{
+  width: 280px;
+  height: 250px;
+  margin-bottom: 1rem;
+  overflow-y:contain;
+  transition: all 0.3s ease-in-out;
+}
+
+.example-card:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
 
 .thumb{
-  width: 200px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 2%;
 }
 
-.cardd{
-  transition: all 0.3s ease-in-out;
+p .title{
+  text-overflow: ellipsis;
 }
 
-.cardd:hover{
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
+
+.card-title{
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media only screen and (max-width:576px){
+  .title{
+    font-size: 1.5rem;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+  }
 
 }
