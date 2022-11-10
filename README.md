@@ -20,3 +20,6 @@ this thing has
  - A separete about us page with intro to author
  - Firebase Hosting.
  - Connecting to the Mongodb Atlas.
+ - News page load in a modal or something??
+ - Write 5-6 medium posts about this??
+ - A real Landing page where a bar with all the news terms will be there just below the navbar (refer bbc news for the idea).
