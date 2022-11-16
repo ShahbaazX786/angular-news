@@ -15,7 +15,7 @@ export class HeroComponent implements OnInit {
   ngOnInit(): void {
     this.getTimeNow();
     this.api.getTopHeadLines().subscribe((res) => {
-      console.log(res.articles);
+      // console.log(res.articles);
       this.HeadLinesArray = res.articles;
     });
   }
@@ -28,7 +28,7 @@ export class HeroComponent implements OnInit {
     });
     let date = new Date().toLocaleDateString();
     this.timeNow = " Today is " + date + " And now the time is: "+ " "+time;
-    console.log(this.timeNow);
+    // console.log(this.timeNow);
 
   }
 }
