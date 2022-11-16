@@ -11,13 +11,23 @@
   padding: 0;
 }
 
+marquee{
+  /* background-color: rgb(177, 177, 177); */
+  color: black;
+  font-weight: bold;
+}
+
+
 .row{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   align-self: center;
-  gap: 1rem;
+  gap: 0.4rem;
+  padding-top: 5px;
+  /* border-top: 1px solid red;
+  border-bottom: 1px solid red; */
 }
 
 .card-links{
@@ -36,6 +46,7 @@
   transform: scale(1.08);
   transition: all 0.5s ease-in-out;
   z-index: 2;
+  transition-delay: 1s;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
@@ -53,12 +64,14 @@ p .title{
 
 
 .card-title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   margin-top: 5px;
   font-size: 1rem;
   font-weight: normal;
   text-decoration: none;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 
