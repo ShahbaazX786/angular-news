@@ -3,7 +3,7 @@ angular-news-app
 this thing has 
 - hero section ✅
 - about section ✅
-- contact section
+- contact section ✅
 - report section (Will redirect to github issues page where one can raise a issue request in the repository)
 - pnf ✅
 - header ✅
@@ -24,7 +24,7 @@ this thing has
  - Write 5-6 medium posts about this??
  - A real Landing page where a bar with all the news terms will be there just below the navbar (refer bbc news for the idea).
 
- Modifications:
+ Modifications: 
  - Pricing section with compare prices with ☑️ and ❌
  - Replace the card with Album like view (Refer bootstrap examples)
  - Change the signup/login page to be Vertically centered hero (Refer B examples)
